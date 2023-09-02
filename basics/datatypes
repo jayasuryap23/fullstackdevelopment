@@ -1,0 +1,11 @@
+primitive data types -  byte -0 , short -0,  int -0,  long -ol,
+ float -0.0f, double -0.0d,
+ boolean -false, char,
+ byte - 1 byte ( 8 bit)
+ short - 2 byte ( 16 bit)
+ int -  4 byte ( 32 bit)
+ long -  8 byte (64 bit)
+ float -  4 byte ( 32 bit)
+ double -  8 byte (64 bit )
+ boolean - 1 bit
+ char - 2 byte (16 bit )
