@@ -1,0 +1,26 @@
+build fast,  responsive sites with bootstrap
+
+step  1: setting the environment 
+( download and CDN)
+
+step  2 : containers and container
+
+container are the core of bootstrap  grid system
+
+container has 12 parts 
+
+viewport - dimension 
+five types of  grid system break points 
+-------------------------------------------
+xs -  extra small ( for mobile phones)
+sm -  small ( for mobile landscape)
+md - medium  (  for tablet)
+lg -  large (  for small desktop  and laptop)
+xl  - extra  large ( wide -  screen desktop monitor )
+
+
+<div class="container"> 
+<div class="row >
+<div class="col-sm-1" > </div>
+ </div>
+</div>
