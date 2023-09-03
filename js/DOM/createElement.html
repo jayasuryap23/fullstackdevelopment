@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let para =  document.createElement("p");
+        para.innerHTML= "this is a <i>Sample paragraph </i>";
+        para.style.color="blue";
+        console.log(para);
+        const body =  document.querySelector("body");
+        // console.log(body);
+        body.appendChild(body);
+        console.log(body);
+
+    </script>
+    
+</body>
+</html>

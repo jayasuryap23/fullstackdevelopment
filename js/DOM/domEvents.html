@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtName" class="apple" name="name"/>
+    <button id="btnClick">Click</button>
+    <script>
+        const btnClick =  document.getElementById("btnClick");
+        const input = document.querySelector("input");
+        btnClick.addEventListener("click",function()
+        {
+            const getAtt =  input.getAttribute("type");
+            if(getAtt=="text")
+            {
+                input.setAttribute("type","password");
+            }
+            else
+            {
+                input.setAttribute("type","text");
+            }
+        })
+        input.removeAttribute("name");
+        console.log(input.hasAttribute("class"));
+    </script>
+</body>
+</html>

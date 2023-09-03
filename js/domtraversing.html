@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h2>sample title </h2>
+        <p>this is paragraph </p>
+    </div>
+    <script>
+        const para =  document.getElementsByTagName("p");
+        console.log(para);
+
+        const parent =  para[0].parentNode;
+        console.log(parent);
+
+        parent.style.backgroundColor="palegreen";
+        parent.style.padding="10px";
+
+        const h1 = document.getElementsByTagName("h1");
+        console.log(h1);
+
+        const parent_h1 =  h1[0].parentNode;
+        parent_h1.style.backgroundColor="palevoiletred";
+        parent_h1.style.padding="10px";
+
+    </script>
+</body>
+</html>
