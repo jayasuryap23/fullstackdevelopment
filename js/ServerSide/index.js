@@ -57,13 +57,14 @@ myNewPromise.then(value=>
 
     console.log(users) */
     //  async await -  more then is not readbale 
-    const myUsers={
+    /* const myUsers={
         userList:[]
     }
     const user =async ()=>
     {
         const response = await fetch("https://jsonplaceholder.typicode.com/users")
         const userData = await  response.json()
+        anotherFunction(userData)
         userData.map((element)=>
         {
             console.log(element.website)
@@ -72,14 +73,38 @@ myNewPromise.then(value=>
         return userData
        
     }
-    user();
+    // user();
 
-    const anotherFunction =  async ()=>
+    const anotherFunction =  async (data)=>
     {
-        const data = await  user()
+       // const data = await  user()
         myUsers.userList=data;
         return data; 
        // console.log(data)
     }
-anotherFunction();
+    user();
+//anotherFunction();
 console.log(myUsers)
+ */
+const jokeObject ={
+    id:'5ozo',
+    joke:'what do you call  a troublesome canadian high schooler ?, a poutine.'
+}
+const postDadJoke =  async(jokeObj)=>
+{
+    const response =  await fetch("https://hhtpbin.org/post",{
+        method:"post",
+        headers:{
+            "content-type":"application/json"
+           // Accept:"text/plain"
+            //  text application /json
+        },
+        body:JSON.stringify(jokeObj)//  sending the data 
+
+    })
+    const responseData =  await response.json();
+    console.log(responseData.headers)
+   // const jsonJokeData =  await response.text() //  response .text() 
+    //console.log(jsonJokeData)
+}
+postDadJoke(jokeObject)
